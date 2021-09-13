@@ -1,0 +1,102 @@
+* {
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: #eee;
+}
+
+a,
+h1,
+h2 {
+    color: #a8376f;
+    padding: 10;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    border-bottom: 2px solid #eee;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.pagina {
+    margin: 2em auto;
+    width: 35em;
+    border: 5px solid #ccc;
+    padding: 0.8em;
+    background: white;
+}
+
+.entradas {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.entradas li {
+    margin: 0.8em 1.2em;
+    text-align: justify;
+}
+
+.entradas li h2 {
+    margin-left: -1em;
+}
+
+.ins-entrada {
+    font-size: 0.9em;
+    border-bottom: 1px solid #ccc;
+    padding: 10;
+    background-color: lightgrey;
+}
+
+.ins-entrada dl dt {
+    font-weight: bold;
+    padding: 10;
+}
+
+.metanav {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    background: #fafafa;
+}
+
+.flash {
+    background: #CEE5F5;
+    padding: 0.5em;
+    border: 1px solid #AACBE2;
+}
+
+.erro {
+    background: #F0D6D6;
+    padding: 0.5em;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #a8376f;
+    padding: 10;
+}
+
+#login {
+    display: block;
+    align-items: center;
+    margin: 20%;
+    margin-top: 0em;
+    margin-block-end: 1em;
+    background-color: lightgrey;
+    padding: 10;
+}
+
+legend {
+    padding: 5;
+}

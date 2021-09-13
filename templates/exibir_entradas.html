@@ -1,3 +1,27 @@
-<h1 style="color: blue;">Aqui estarão as entradas!!</h1>
+{% extends 'layout.html' %}
 
-<h2 style="color:blueviolet">Esse é o arquito template HTML</h2>
+{% block corpo %}
+{%if session.logado %}
+<form action="{{url_for('inserir_entrada')}}" method="POST" class='ins-entrada'>
+    <dl>
+        <dt>Capítulo de hoje:</dt>
+        <dd><input type="text" size="30" name="campoTitulo"></dd>
+        <dt>Sua história:</dt>
+        <dd><textarea rows="5" cols="48" name="campoTexto"></textarea></dd>
+        <dd><input type="submit" value="Publicar"></dd>
+    </dl>
+</form>
+
+{% endif %}
+<ul class="entradas">
+    {% for entrada in entradas %}
+    <li>
+        <h2>{{ entrada.titulo }}</h2>
+        {{entrada.texto}}
+    </li>
+    {% else %}
+    <li><em>Faça sua primeira postagem!</em></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
